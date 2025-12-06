@@ -1,53 +1,34 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 export default function Header() {
   const currentPath = usePathname();
-  const linkStyle = (path: string) =>
-    currentPath === path
-      ? { margin: "0 15px", textDecoration: "underline",fontFamily: "'Saira', sans-serif", color: "#545e75", textDecorationColor: "#3E92CC",         textDecorationThickness: "3px",    // make it bolder
-        textUnderlineOffset: "6px",  }
-      : { margin: "0 15px" ,fontFamily: "'Saira', sans-serif", color: "#545e75"};
+
+  const linkClass = (path: string) =>
+    clsx(
+      "mx-4 font-[Saira] text-[#545e75] hover:text-[#3E92CC] transition-all",
+      currentPath === path &&
+        "underline decoration-[#3E92CC] decoration-4 underline-offset-8"
+    );
 
   return (
-    <header
-      style={{
-        height: "12vh",
-        width: "100vw",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "white",
-        borderBottom: "1px solid",
-        borderBottomColor: "#3E92CC",
-        fontSize: '1.3rem',
-        color: "#545e75",
-      }}
-    >
-      <div style={{ display: "flex", width: "20vw", justifyContent: "center" , color: "#3E92CC", fontFamily: "'Saira Condensed', sans-serif", fontSize: "3rem", fontWeight: "bold"}}>
+    <header className="w-full h-[12vh] bg-white border-b border-[#3E92CC] flex items-center justify-between px-4 md:px-12 text-lg text-[#545e75]">
+      {/* Logo */}
+      <div className="text-[#3E92CC] font-bold font-[Saira] text-3xl sm:text-4xl">
         Jon SF Energy
       </div>
-      <div
-        style={{ display: "flex", width: "60vw", justifyContent: "center" }}
-      ></div>
-      <div
-        style={{
-          display: "flex",
-          width: "10vw",
-          justifyContent: "space-between",
-        }}
-      >
-        <Link href="/services" style={linkStyle("/services")}>
+
+      {/* Navigation */}
+      <nav className="flex space-x-6 text-base sm:text-lg">
+        <Link href="/services" className={linkClass("/services")}>
           SERVICES
         </Link>
-        <Link href="/contact" style={linkStyle("/contact")}>
+        <Link href="/contact" className={linkClass("/contact")}>
           CONTACT
         </Link>
-      </div>
-            <div
-        style={{ display: "flex", width: "5vw", justifyContent: "center" }}
-      ></div>
+      </nav>
     </header>
   );
 }
