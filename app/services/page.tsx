@@ -7,7 +7,7 @@ export default function Home() {
     </div>
     
     <div>
-      The Residential Energy and Water Conservation ordinance requires residential, multi-family, and commercial
+      The Residential Energy and Water Conservation ordinance requires residential, multi-family, and commercial properties
     </div>
     </div>
   );
