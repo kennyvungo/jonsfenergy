@@ -14,7 +14,7 @@ export default function Header() {
     <header
       style={{
         height: "12vh",
-        width: "100%",
+        width: "100vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -25,16 +25,16 @@ export default function Header() {
         color: "#545e75",
       }}
     >
-      <div style={{ display: "flex", width: "20%", justifyContent: "center" , color: "#3E92CC", fontFamily: "'Saira Condensed', sans-serif", fontSize: "3rem", fontWeight: "bold"}}>
+      <div style={{ display: "flex", width: "20vw", justifyContent: "center" , color: "#3E92CC", fontFamily: "'Saira Condensed', sans-serif", fontSize: "3rem", fontWeight: "bold"}}>
         Jon SF Energy
       </div>
       <div
-        style={{ display: "flex", width: "60%", justifyContent: "center" }}
+        style={{ display: "flex", width: "60vw", justifyContent: "center" }}
       ></div>
       <div
         style={{
           display: "flex",
-          width: "10%",
+          width: "10vw",
           justifyContent: "space-between",
         }}
       >
@@ -46,7 +46,7 @@ export default function Header() {
         </Link>
       </div>
             <div
-        style={{ display: "flex", width: "5%", justifyContent: "center" }}
+        style={{ display: "flex", width: "5vw", justifyContent: "center" }}
       ></div>
     </header>
   );
