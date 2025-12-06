@@ -4,54 +4,25 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        height: "20vh",
-        width: "100%",
-        backgroundColor: "#3E92CC",
-        color: "white",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        style={{
-          width: "20%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-start",
-          alignItems: "flex-start",
-          marginLeft: "5%",
-        }}
-      >
-        <div
-          style={{
-            fontFamily: "'Saira Condensed', sans-serif",
-            fontSize: "2rem",
-            fontWeight: "bold",
-          }}
-        >
-          Jon SF Energy
+    <footer className="w-full bg-[#3E92CC] text-white py-8 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
+
+        {/* Left Section */}
+        <div className="flex flex-col space-y-2">
+          <h2 className="text-2xl font-semi-bold font-[Saira]">Jon SF Energy</h2>
+          <div>236 West Portal Ave #559</div>
+          <div>San Francisco, CA 94127</div>
         </div>
-        <div>236 West Portal Ave #559</div>
-        <div>San Francisco, CA 94127</div>
-      </div>
-      <div style={{ width: "65%" }}></div>
-      <div
-        style={{
-          width: "10%",
-          height: "30%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          alignItems: "space-around",
-          textDecoration: "underline"
-        }}
-      >
-        <Link href="/services">SERVICES</Link>
-        <Link href="/contact">CONTACT</Link>
+
+        {/* Right Section */}
+        <div className="flex flex-col space-y-3 text-lg underline">
+          <Link href="/services" className="hover:text-gray-200">
+            SERVICES
+          </Link>
+          <Link href="/contact" className="hover:text-gray-200">
+            CONTACT
+          </Link>
+        </div>
       </div>
     </footer>
   );
