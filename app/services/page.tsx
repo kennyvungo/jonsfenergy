@@ -54,7 +54,7 @@ export default function Home() {
       <section className="max-w-full flex flex-col items-start space-y-8 text-left overflow-x-auto">
         <h2 className="text-3xl md:text-4xl text-[#3E92CC] font-[Saira] lg:whitespace-nowrap">Contact Me</h2>
         <div className="flex flex-col items-start space-y-6 w-full overflow-x-auto">
-          <div className="whitespace-nowrap">
+          <div className="lg:whitespace-nowrap">
             <div className="text-3xl sm:text-4xl font-[Saira]">Jonathan Chan</div>
             <div className="text-lg sm:text-xl font-[Saira] mt-2">
               Certified Residential Energy & Water Conservation #387
