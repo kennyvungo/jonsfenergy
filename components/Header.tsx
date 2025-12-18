@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="w-full h-[12vh] bg-white border-b border-[#3E92CC] flex items-center justify-between px-4 md:px-12 text-lg text-[#545e75]">
       {/* Logo */}
-      <div className="text-[#3E92CC] font-bold font-[Saira] text-3xl sm:text-4xl">
+      <div className="text-[#3E92CC] font-semibold font-[Saira] text-3xl sm:text-3xl">
         Jon SF Energy
       </div>
 
