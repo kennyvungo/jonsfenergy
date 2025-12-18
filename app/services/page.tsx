@@ -2,7 +2,7 @@ import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="bg-zinc-50 px-4 py-20 flex flex-col items-center space-y-24 text-[#545e75] font-sans">
+    <main className="bg-zinc-50 px-4 py-20 flex flex-col items-center space-y-10 text-[#545e75] font-sans">
       {/* SECTION 1 */}
       <section className="max-w-full flex flex-col items-start space-y-6 text-left overflow-x-auto">
         <h1 className="text-3xl md:text-5xl text-[#3E92CC] font-[Saira] lg:whitespace-nowrap">
@@ -16,7 +16,7 @@ export default function Home() {
         <p className="text-base sm:text-lg  lg:whitespace-nowrap">
           If you are preparing to sell or remodel your property:
         </p>
-        <ul className="list-disc list-inside space-y-2 text-base sm:text-lglg:whitespace-nowrap">
+        <ul className="list-disc list-inside space-y-2 text-base sm:text-lglg:whitespace-nowrap mb-16">
           <li>Obtain a valid inspection</li>
           <li>
             Complete any needed upgrades — install basic energy and water
@@ -26,7 +26,8 @@ export default function Home() {
             Obtain a Certificate of Completion
             <ul className="list-[circle] list-inside pl-5 mt-2 space-y-1">
               <li>
-                Document compliance with conservation requirements before transfer of title (if you are selling) or at the time of
+                Document compliance with conservation requirements before
+                transfer of title (if you are selling) or at the time of
                 property alterations or improvements
               </li>
             </ul>
@@ -34,7 +35,7 @@ export default function Home() {
         </ul>
 
         {/* SECTION 2 */}
-        <section className="max-w-full flex flex-col items-start space-y-6 text-left overflow-x-auto">
+        <section className="max-w-full flex flex-col items-start space-y-6 text-left overflow-x-auto mb-16">
           <h2 className="text-3xl md:text-4xl text-[#3E92CC] font-[Saira] lg:whitespace-nowrap">
             Inspection Overview
           </h2>
@@ -59,9 +60,11 @@ export default function Home() {
             </p>
             <ul className="list-disc list-inside space-y-2 text-base sm:text-lg lg:whitespace-nowrap">
               <li>Insulating accessible attic space</li>
-              <li>Weather stripping doors leading from heated to unheated areas</li>
+              <li>
+                Weather stripping doors leading from heated to unheated areas
+              </li>
               <li>Insulating hot water heaters</li>
-              <li>Caulk and seal exterior openings</li>
+              <li>Caulk and seal openings in building exterior</li>
               <li>Insulate accessible heating and cooling ducts</li>
             </ul>
           </div>
@@ -72,6 +75,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl text-[#3E92CC] font-[Saira] lg:whitespace-nowrap">
             Contact Me
           </h2>
+          <p className=" text-base sm:text-lg lg:whitespace-nowrap">
+            If you have any questions or would like to make an appointment, feel free to reach out.
+          </p>
           <div className="flex flex-col items-start space-y-6 w-full overflow-x-auto">
             <div className="lg:whitespace-nowrap">
               <div className="text-3xl sm:text-4xl font-[Saira]">
