@@ -1,5 +1,13 @@
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
+
+export const metadata = {
+  title:
+    "San Francisco Energy & Water Conservation Inspection | JonSFEnergy",
+  description:
+    "Residential energy and water conservation inspections in San Francisco. Certified inspections for ordinance compliance, remodels, and property sales.",
+};
+
 export default function Home() {
   return (
     <main className="bg-zinc-50 px-4 py-20 flex flex-col items-center space-y-10 text-[#545e75] font-sans">
