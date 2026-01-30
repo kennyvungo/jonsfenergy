@@ -8,7 +8,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "San Francisco Energy & Water Conservation Inspection | JonSFEnergy",
+  title: "SF Energy Water Inspection",
   description:
     "Residential energy and water conservation inspections in San Francisco. Certified inspections for ordinance compliance, remodels, and property sales.",
 };
